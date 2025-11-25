@@ -1,4 +1,6 @@
 from queue import Queue
+import time as timer
+
 
 class Application:
     _number = 0
@@ -26,3 +28,4 @@ if __name__ == "__main__":
     while True:
         generate_request()
         process_request()
+        timer.sleep(0.3)
